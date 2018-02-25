@@ -5,6 +5,7 @@
   "main": "dist/bundle.js",
   "scripts": {
     "build": "NODE_ENV=production webpack -p",
+    "install": "npm run build",
     "clean": "rimraf dist coverage lib",
     "lint": "eslint src --ext .js,.jsx",
     "test": "mocha --compilers js:babel-core/register",
